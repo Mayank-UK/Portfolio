@@ -1,0 +1,116 @@
+$sizes: (
+	'xs': 8px,
+	'sm': 16px,
+	'md': 32px,
+	'lg': 64px,
+	'xl': 128px,
+);
+
+// margin
+@mixin margin-top($size) {
+	margin-top: px-to-rem(map-get($sizes, $size));
+}
+
+@mixin margin-right($size) {
+	margin-right: px-to-rem(map-get($sizes, $size));
+}
+
+@mixin margin-bottom($size) {
+	margin-bottom: px-to-rem(map-get($sizes, $size));
+}
+
+@mixin margin-left($size) {
+	margin-left: px-to-rem(map-get($sizes, $size));
+}
+
+// padding
+@mixin padding-top($size) {
+	padding-top: px-to-rem(map-get($sizes, $size));
+}
+
+@mixin padding-right($size) {
+	padding-right: px-to-rem(map-get($sizes, $size));
+}
+
+@mixin padding-bottom($size) {
+	padding-bottom: px-to-rem(map-get($sizes, $size));
+}
+
+@mixin padding-left($size) {
+	padding-left: px-to-rem(map-get($sizes, $size));
+}
+
+// spacing techniques
+@mixin inset($size) {
+	padding: px-to-rem(map-get($sizes, $size));
+}
+
+@mixin inset-squish($size) {
+	@if ($size == xs) {
+		padding: px-to-rem(8px) px-to-rem(16px) px-to-rem(8px) px-to-rem(16px);
+	} @else if($size == sm) {
+		padding: px-to-rem(16px)
+			px-to-rem(32px)
+			px-to-rem(16px)
+			px-to-rem(32px);
+	} @else if($size == md) {
+		padding: px-to-rem(32px)
+			px-to-rem(64px)
+			px-to-rem(32px)
+			px-to-rem(64px);
+	} @else if($size == lg) {
+		padding: px-to-rem(64px)
+			px-to-rem(128px)
+			px-to-rem(64px)
+			px-to-rem(128px);
+	}
+}
+
+@mixin inset-stretch($size) {
+	@if ($size == xs) {
+		padding: px-to-rem(16px) px-to-rem(8px) px-to-rem(16px) px-to-rem(8px);
+	} @else if($size == sm) {
+		padding: px-to-rem(32px)
+			px-to-rem(16px)
+			px-to-rem(32px)
+			px-to-rem(16px);
+	} @else if($size == md) {
+		padding: px-to-rem(64px)
+			px-to-rem(32px)
+			px-to-rem(64px)
+			px-to-rem(32px);
+	} @else if($size == lg) {
+		padding: px-to-rem(128px)
+			px-to-rem(64px)
+			px-to-rem(128px)
+			px-to-rem(64px);
+	}
+}
+
+@mixin stack($size) {
+	@if ($size == xs) {
+		margin: px-to-rem(8px) px-to-rem(0px) px-to-rem(8px) px-to-rem(0px);
+	} @else if($size == sm) {
+		margin: px-to-rem(16px) px-to-rem(0px) px-to-rem(16px) px-to-rem(0px);
+	} @else if($size == md) {
+		margin: px-to-rem(32px) px-to-rem(0px) px-to-rem(32px) px-to-rem(0px);
+	} @else if ($size == lg) {
+		margin: px-to-rem(64px) px-to-rem(0px) px-to-rem(64px) px-to-rem(0px);
+	} @else if($size == xl) {
+		margin: px-to-rem(128px) px-to-rem(0px) px-to-rem(128px) px-to-rem(0px);
+	}
+}
+
+@mixin inline($size) {
+	@if ($size == xs) {
+		margin: px-to-rem(0px) px-to-rem(8px) px-to-rem(0px) px-to-rem(8px);
+	} @else if($size == sm) {
+		margin: px-to-rem(0px) px-to-rem(16px) px-to-rem(0px) px-to-rem(16px);
+	} @else if($size == md) {
+		margin: px-to-rem(0px) px-to-rem(32px) px-to-rem(0px) px-to-rem(32px);
+	} @else if ($size == lg) {
+		margin: px-to-rem(0px) px-to-rem(64px) px-to-rem(0px) px-to-rem(64px);
+	} @else if($size == xl) {
+		margin: px-to-rem(0px) px-to-rem(128px) px-to-rem(0px) px-to-rem(128px);
+	}
+}
