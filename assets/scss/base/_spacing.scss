@@ -41,11 +41,11 @@ $sizes: (
 }
 
 // spacing techniques
-@mixin inset($size) {
+@mixin padding-inset($size) {
 	padding: px-to-rem(map-get($sizes, $size));
 }
 
-@mixin inset-squish($size) {
+@mixin padding-inset-squish($size) {
 	@if ($size == xs) {
 		padding: px-to-rem(8px) px-to-rem(16px) px-to-rem(8px) px-to-rem(16px);
 	} @else if($size == sm) {
@@ -66,7 +66,7 @@ $sizes: (
 	}
 }
 
-@mixin inset-stretch($size) {
+@mixin padding-inset-stretch($size) {
 	@if ($size == xs) {
 		padding: px-to-rem(16px) px-to-rem(8px) px-to-rem(16px) px-to-rem(8px);
 	} @else if($size == sm) {
@@ -87,7 +87,7 @@ $sizes: (
 	}
 }
 
-@mixin stack($size) {
+@mixin margin-stack($size) {
 	@if ($size == xs) {
 		margin: px-to-rem(8px) px-to-rem(0px) px-to-rem(8px) px-to-rem(0px);
 	} @else if($size == sm) {
@@ -101,7 +101,7 @@ $sizes: (
 	}
 }
 
-@mixin inline($size) {
+@mixin margin-inline($size) {
 	@if ($size == xs) {
 		margin: px-to-rem(0px) px-to-rem(8px) px-to-rem(0px) px-to-rem(8px);
 	} @else if($size == sm) {

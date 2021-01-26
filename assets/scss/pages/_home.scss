@@ -1,0 +1,120 @@
+.p-hero-section {
+	@include padding-left(sm);
+	@include padding-right(sm);
+
+	&__text {
+		@include padding-top(md);
+
+		@include breakpoint-up(md) {
+			width: 50%;
+			margin-top: px-to-rem(64px);
+		}
+
+		@include breakpoint-up(lg) {
+			margin-top: px-to-rem(128px);
+		}
+	}
+
+	&__subtitle {
+		@include typography-subtitle-1;
+		color: $color-heading-dark;
+	}
+
+	&__title {
+		@include typography-h3;
+		@include breakpoint-up(md) {
+			@include typography-h2;
+		}
+		@include margin-top(xs);
+		@include margin-bottom(md);
+
+		color: $color-heading-dark;
+	}
+
+	&__image {
+		display: block;
+		bottom: 0px;
+		height: auto;
+		margin: 0px auto;
+		object-fit: cover;
+		position: absolute;
+		right: px-to-rem(16px);
+		width: 95%;
+		max-width: px-to-rem(500px);
+		z-index: 1;
+
+		@include breakpoint-up(md) {
+		}
+
+		@include breakpoint-up(lg) {
+			max-width: px-to-rem(700px);
+		}
+
+		@include breakpoint-up(xl) {
+			left: 40% '';
+		}
+	}
+}
+
+.p-about {
+	&__image {
+		height: auto;
+		width: 100%;
+	}
+
+	&__description {
+		@include margin-top(md);
+
+		@include breakpoint-up(md) {
+			margin-top: 0px;
+		}
+
+		@include typography-body-2;
+
+		color: $color-body-dark;
+	}
+}
+
+.p-contact {
+	&__form {
+		@include margin-top(lg);
+
+		@include breakpoint-up(md) {
+			margin-top: 0px;
+		}
+	}
+
+	&__label {
+		@include margin-bottom(xs);
+	}
+
+	&__input {
+		@include margin-bottom(xs);
+	}
+
+	&__button {
+		@include margin-top(md);
+	}
+
+	&__image {
+		height: auto;
+		width: 100%;
+	}
+}
+
+.p-footer {
+	@include padding-inset(sm);
+
+	&__text {
+		@include typography-body-2;
+		color: $color-body-dark;
+	}
+
+	&__symbol {
+		@include typography-h6;
+
+		@include margin-right(xs);
+
+		color: $color-body-dark;
+	}
+}

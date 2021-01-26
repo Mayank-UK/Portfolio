@@ -1,0 +1,91 @@
+.m-main-section {
+	@include padding-top(lg);
+	@include padding-bottom(lg);
+
+	&__title {
+		@include margin-left(sm);
+	}
+
+	&__title-text {
+		@include typography-h4;
+
+		color: $color-heading-dark;
+		display: inline;
+	}
+
+	&__title-text--primary {
+		color: $color-primary;
+	}
+
+	&__content {
+		@include margin-top(lg);
+	}
+
+	&--bg {
+		background: $background-body-dark;
+	}
+}
+
+.m-why-section {
+	@include margin-bottom(lg);
+
+	&__text {
+		@include margin-top(md);
+
+		@include breakpoint-up(md) {
+			margin-top: 0px;
+		}
+	}
+
+	&__title {
+		@include typography-h5;
+
+		color: $color-heading-dark;
+	}
+
+	&__description {
+		@include typography-body-2;
+
+		@include margin-top(sm);
+		color: $color-body-dark;
+	}
+
+	&__image {
+		height: auto;
+		width: 100%;
+	}
+}
+
+.m-client-card-container {
+	@include margin-bottom(lg);
+
+	@include breakpoint-up(md) {
+		margin-bottom: 0px;
+	}
+}
+
+.m-service-card-container {
+	@include margin-bottom(lg);
+
+	@include breakpoint-up(md) {
+		margin-bottom: 0px;
+	}
+}
+
+.m-project-card-container {
+	@include margin-bottom(lg);
+
+	@include breakpoint-up(md) {
+		margin-bottom: 0px;
+	}
+
+	&--margin-bottom {
+		@include breakpoint-up(md) {
+			@include margin-bottom(lg);
+		}
+
+		@include breakpoint-up(lg) {
+			margin-bottom: 0px;
+		}
+	}
+}

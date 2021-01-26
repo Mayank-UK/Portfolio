@@ -20,8 +20,8 @@ $color-error: #ff0000;
 $color-alert: #faff00;
 $color-success: #24b400;
 
-$color-heading-button-dark: #000000;
-$color-heading-button-light: #ffffff;
+$color-heading-dark: #000000;
+$color-heading-light: #ffffff;
 $color-body-dark: #373737;
 $color-body-light: #ededed;
 $color-label-caption-placeholder-dark: #b3b3b3;
@@ -32,6 +32,12 @@ $color-link-light: #f4f4f4;
 $background-body-light: #ffffff;
 $background-body-dark: #fbfbfb;
 $background-input-field: #fbfbfb;
+$background-body-gradient: linear-gradient(
+	180deg,
+	#efefef 0%,
+	#e4e4e4 0.01%,
+	rgba(226, 226, 226, 0) 100%
+);
 
 $color-border-light: #e7e7e7;
 $color-border-dark: #c4c4c4;

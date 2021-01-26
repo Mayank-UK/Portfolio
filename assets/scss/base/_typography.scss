@@ -149,6 +149,7 @@ $roboto_slab: Roboto Slab, serif;
 	font-size: px-to-rem(16px);
 	letter-spacing: px-to-rem(1.25px);
 	line-height: 100%;
+	text-transform: uppercase;
 
 	/* @include breakpoint-up('md') {
 		font-size: px-to-rem(16px);
