@@ -22,15 +22,16 @@
 
 	&__bubble-2 {
 		background: $color-secondary-light !important;
-		top: rem(100px);
+		// top: rem(100px);
+		top: 13%;
 		left: rem(250px);
 
 		@include breakpoint-up(md) {
-			top: rem(100px);
+			top: 100px;
 		}
 
 		@include breakpoint-up(lg) {
-			top: rem(220px);
+			top: 240px;
 		}
 	}
 

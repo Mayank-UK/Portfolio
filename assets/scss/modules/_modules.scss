@@ -19,13 +19,21 @@
 	}
 
 	&__list-item {
-		@include typography-navigation;
 		margin-right: rem(32px);
+		transition: all 0.3s ease;
 	}
 
 	&__anchor {
+		@include padding-inset(xs);
+		@include typography-navigation;
 		color: $color-heading-dark;
 		text-decoration: none;
+
+		&--active {
+			border-bottom: 2px solid $color-primary;
+			color: $color-primary;
+			transition: all 0.3s ease;
+		}
 	}
 
 	@include breakpoint-up(md) {
@@ -86,9 +94,9 @@
 		@include padding-inset(sm);
 		background: none;
 		border: none;
-		left: 70%;
-		position: relative;
-		top: 8%;
+		float: right;
+		margin-top: 32px;
+		margin-right: 32px;
 
 		&:focus {
 			outline: $outline-primary;
@@ -127,8 +135,16 @@
 	}
 
 	&__anchor {
+		@include padding-inset(xs);
+		@include typography-navigation;
 		color: $color-heading-dark;
 		text-decoration: none;
+
+		&--active {
+			border-bottom: 2px solid $color-primary;
+			color: $color-primary;
+			transition: all 0.3s ease;
+		}
 	}
 
 	@include breakpoint-up(md) {
@@ -139,6 +155,8 @@
 .m-main-section {
 	@include padding-top(lg);
 	@include padding-bottom(lg);
+	//to prevent outline due to smooth scrolling
+	outline: none;
 
 	&__title {
 		@include margin-left(sm);
