@@ -1,5 +1,5 @@
 /* utilities */
-@import './utility/_px_to_rem';
+@import './utility/_rem';
 
 /* base */
 @import './base/_reset';
@@ -27,31 +27,8 @@
 // /* dirtyfix */
 @import './dirtyfix/_dirtyfix';
 
-/* pages */
-@import './pages/_home';
-
 /* utilities */
 @import './utility/_utility_classes';
-
-/* bootstrap overrides */
-.container {
-	padding: 0px;
-}
-
-.container-fluid {
-	padding: 0px;
-	max-width: 1200px;
-}
-
-.row {
-	padding: 0px;
-	margin: 0px;
-}
-
-[class*='col-'] {
-	padding-left: 16px;
-	padding-right: 16px;
-}
 
 /* code */
 * {

@@ -6,74 +6,69 @@
 		z-index: 1;
 
 		@include breakpoint-up(md) {
-			bottom: px-to-rem(-88px);
+			bottom: rem(-80px);
 			display: block;
-			left: px-to-rem(48px);
+			left: rem(48px);
 		}
 
 		@include breakpoint-up(lg) {
-			left: px-to-rem(64px);
+			left: rem(64px);
 		}
 
 		@include breakpoint-up(xl) {
-			left: px-to-rem(300px);
-		}
-	}
-}
-
-.l-header-container {
-	height: 100%;
-	position: relative;
-	overflow: hidden;
-
-	&__bubble-1 {
-		top: px-to-rem(32px);
-		left: px-to-rem(256px);
-
-		@include breakpoint-up(md) {
-			top: px-to-rem(80px);
-		}
-
-		@include breakpoint-up(lg) {
-			top: px-to-rem(150px);
+			left: rem(300px);
 		}
 	}
 
 	&__bubble-2 {
-		bottom: px-to-rem(204px);
-		left: px-to-rem(64px);
+		background: $color-secondary-light !important;
+		top: rem(100px);
+		left: rem(250px);
 
 		@include breakpoint-up(md) {
-			left: auto;
-			right: px-to-rem(512px);
+			top: rem(100px);
 		}
 
 		@include breakpoint-up(lg) {
-			right: px-to-rem(700px);
+			top: rem(220px);
 		}
 	}
 
 	&__bubble-3 {
-		bottom: px-to-rem(128px);
-		left: px-to-rem(32px);
+		bottom: rem(204px);
+		left: rem(64px);
 
 		@include breakpoint-up(md) {
 			left: auto;
-			right: px-to-rem(512px);
+			right: rem(512px);
 		}
 
 		@include breakpoint-up(lg) {
-			right: px-to-rem(700px);
+			right: rem(700px);
 		}
 	}
 
 	&__bubble-4 {
-		bottom: px-to-rem(128px);
-		right: px-to-rem(-8px);
+		bottom: rem(128px);
+		left: rem(32px);
 
 		@include breakpoint-up(md) {
-			bottom: px-to-rem(200px);
-			right: px-to-rem(96px);
+			left: auto;
+			right: rem(512px);
+		}
+
+		@include breakpoint-up(lg) {
+			right: rem(700px);
+		}
+	}
+
+	&__bubble-5 {
+		bottom: rem(128px);
+		right: rem(-8px);
+
+		@include breakpoint-up(md) {
+			bottom: rem(200px);
+			right: rem(96px);
 		}
 
 		@include breakpoint-up(lg) {
@@ -81,291 +76,363 @@
 		}
 	}
 
-	&__bubble-5 {
+	&__bubble-6 {
 		display: none;
 
 		@include breakpoint-up(lg) {
 			display: block;
-			bottom: px-to-rem(100px);
-			right: px-to-rem(32px);
+			bottom: rem(100px);
+			right: rem(32px);
 		}
 	}
 }
 
 .l-main {
-	&__container-why {
-		position: relative;
-		overflow: hidden;
-	}
-
-	&__container-why-bubble-1 {
-		top: px-to-rem(300px);
-		right: px-to-rem(100px);
+	&__bubble-1 {
+		top: rem(900px);
+		left: rem(-10px);
 
 		@include breakpoint-up(md) {
-			right: px-to-rem(170px);
-			top: px-to-rem(32px);
+			top: rem(350px);
 		}
 
 		@include breakpoint-up(lg) {
-			right: px-to-rem(200px);
 		}
 	}
 
-	&__container-why-bubble-3 {
-		bottom: px-to-rem(20px);
-		right: px-to-rem(100px);
+	&__bubble-2 {
+		bottom: rem(0px);
+		left: rem(100px);
+
+		@include breakpoint-up(xl) {
+			left: 400px;
+		}
+	}
+
+	&__bubble-3 {
+		top: rem(300px);
+		right: rem(100px);
 
 		@include breakpoint-up(md) {
-			bottom: px-to-rem(250px);
-			right: px-to-rem(300px);
+			right: rem(170px);
+			top: rem(32px);
 		}
 
 		@include breakpoint-up(lg) {
-			bottom: px-to-rem(400px);
-			right: px-to-rem(600px);
+			right: rem(200px);
 		}
 	}
 
-	&__container-client {
-		position: relative;
-		overflow: hidden;
-	}
-
-	&__container-client-bubble-1 {
-		left: px-to-rem(200px);
-	}
-
-	&__container-client-bubble-2 {
-		top: px-to-rem(200px);
-		right: px-to-rem(-16px);
+	&__bubble-4 {
+		bottom: rem(20px);
+		right: rem(100px);
 
 		@include breakpoint-up(md) {
-			left: px-to-rem(200px);
+			bottom: rem(250px);
+			right: rem(300px);
 		}
 
 		@include breakpoint-up(lg) {
-			left: px-to-rem(300px);
+			bottom: rem(400px);
+			right: rem(600px);
 		}
 	}
 
-	&__container-client-bubble-3 {
-		bottom: px-to-rem(300px);
-		left: px-to-rem(50px);
+	&__bubble-5 {
+		left: rem(200px);
+		z-index: -1;
+	}
+
+	&__bubble-6 {
+		top: rem(200px);
+		right: rem(-16px);
+
+		@include breakpoint-up(md) {
+			left: rem(200px);
+		}
+
+		@include breakpoint-up(lg) {
+			left: rem(300px);
+		}
+	}
+
+	&__bubble-7 {
+		bottom: rem(300px);
+		left: rem(50px);
 
 		@include breakpoint-up(md) {
 			display: none;
 		}
 	}
 
-	&__container-about {
-		position: relative;
-		overflow: hidden;
-	}
-
-	&__container-about-bubble-1 {
-		left: px-to-rem(32px);
-		bottom: px-to-rem(-40px);
+	&__bubble-8 {
+		right: rem(64px);
+		top: rem(400px);
 
 		@include breakpoint-up(md) {
-			left: px-to-rem(250px);
-			top: px-to-rem(100px);
+			bottom: rem(0px);
+			right: rem(100px);
 		}
 
 		@include breakpoint-up(lg) {
-			left: px-to-rem(450px);
+			right: rem(50px);
+		}
+
+		@include breakpoint-up(xl) {
+			right: rem(200px);
 		}
 	}
 
-	&__container-service {
-		position: relative;
-		overflow: hidden;
-	}
-
-	&__container-service-bubble-2 {
-		left: px-to-rem(100px);
-		top: px-to-rem(70px);
-	}
-
-	&__container-project {
-		position: relative;
-		overflow: hidden;
-	}
-
-	&__container-project-bubble-1 {
-		bottom: px-to-rem(-10px);
-		left: px-to-rem(150px);
-	}
-
-	&__container-project-bubble-2 {
-		top: px-to-rem(50px);
-
-		@include breakpoint-up(lg) {
-			right: px-to-rem(200px);
-		}
-	}
-
-	&__container-contact {
-		position: relative;
-		overflow: hidden;
-	}
-
-	&__container-contact-bubble-1 {
-		left: px-to-rem(100px);
-		top: px-to-rem(400px);
+	&__bubble-9 {
+		right: rem(64px);
+		top: rem(300px);
 
 		@include breakpoint-up(md) {
-			top: px-to-rem(200px);
+			top: auto;
+			bottom: rem(250px);
+			right: rem(100px);
+		}
+
+		@include breakpoint-up(lg) {
+			bottom: rem(200px);
+			right: rem(40px);
+		}
+
+		@include breakpoint-up(xl) {
+			right: rem(200px);
+		}
+	}
+
+	&__bubble-10 {
+		left: rem(32px);
+		bottom: rem(-40px);
+
+		@include breakpoint-up(md) {
+			left: rem(250px);
+			top: rem(100px);
+		}
+
+		@include breakpoint-up(lg) {
+			left: rem(450px);
+		}
+	}
+
+	&__bubble-11 {
+		right: rem(-10px);
+		top: rem(350px);
+
+		@include breakpoint-up(md) {
+			right: rem(-50px);
+			top: rem(250px);
+		}
+	}
+
+	&__bubble-12 {
+		top: rem(400px);
+		left: rem(100px);
+
+		@include breakpoint-up(md) {
+			top: auto;
+			bottom: rem(0px);
+		}
+
+		@include breakpoint-up(lg) {
+			left: rem(200px);
+		}
+
+		@include breakpoint-up(xl) {
+			left: rem(500px);
+		}
+	}
+
+	&__bubble-13 {
+		left: rem(100px);
+		top: rem(70px);
+	}
+
+	&__bubble-14 {
+		bottom: rem(0px);
+		left: rem(150px);
+
+		@include breakpoint-up(xl) {
+			left: rem(400px);
+		}
+	}
+
+	&__bubble-15 {
+		top: rem(50px);
+
+		@include breakpoint-up(lg) {
+			right: rem(200px);
+		}
+	}
+
+	&__bubble-16 {
+		left: rem(100px);
+		top: rem(400px);
+
+		@include breakpoint-up(md) {
+			top: rem(200px);
 		}
 	}
 }
 
 .l-footer {
-	background: $background-body-dark;
-
-	&__container {
-		position: relative;
-		overflow: hidden;
-	}
-
-	&__container-bubble-1 {
-		right: px-to-rem(100px);
-		bottom: px-to-rem(50px);
-
-		@include breakpoint-up(md) {
-			left: px-to-rem(300px);
-		}
-
-		@include breakpoint-up(lg) {
-			left: px-to-rem(400px);
-		}
-	}
-
-	&__container-bubble-2 {
-		right: px-to-rem(110px);
-		bottom: px-to-rem(20px);
-
-		@include breakpoint-up(md) {
-			left: px-to-rem(280px);
-		}
-
-		@include breakpoint-up(lg) {
-			left: px-to-rem(380px);
-		}
-	}
-
-	&__container-bubble-3 {
-		right: px-to-rem(60px);
-		bottom: px-to-rem(20px);
-
-		@include breakpoint-up(md) {
-			left: px-to-rem(350px);
-		}
-
-		@include breakpoint-up(lg) {
-			left: px-to-rem(480px);
-		}
-	}
-}
-
-.l-main-section-why {
-	position: relative;
-	overflow: hidden;
-
 	&__bubble-1 {
-		top: px-to-rem(900px);
-		left: px-to-rem(-10px);
+		right: rem(100px);
+		bottom: rem(50px);
 
 		@include breakpoint-up(md) {
-			top: px-to-rem(350px);
+			left: rem(300px);
 		}
 
 		@include breakpoint-up(lg) {
+			left: rem(400px);
 		}
 	}
 
 	&__bubble-2 {
-		bottom: px-to-rem(0px);
-		left: px-to-rem(100px);
+		right: rem(110px);
+		bottom: rem(20px);
+
+		@include breakpoint-up(md) {
+			left: rem(280px);
+		}
+
+		@include breakpoint-up(lg) {
+			left: rem(380px);
+		}
+	}
+
+	&__bubble-3 {
+		right: rem(60px);
+		bottom: rem(20px);
+
+		@include breakpoint-up(md) {
+			left: rem(350px);
+		}
+
+		@include breakpoint-up(lg) {
+			left: rem(480px);
+		}
+	}
+
+	&__content {
+		@include padding-inset(sm);
+	}
+
+	&__text {
+		@include typography-body-2;
+		color: $color-body-dark;
+	}
+
+	&__symbol {
+		@include typography-h6;
+
+		@include margin-right(xs);
+
+		color: $color-body-dark;
+	}
+}
+
+.l-hero {
+	@include padding-left(sm);
+	@include padding-right(sm);
+	margin-top: 15vh;
+
+	@include breakpoint-up(lg) {
+		margin-top: 30vh;
+	}
+
+	&__text {
+		@include breakpoint-up(md) {
+			width: 50%;
+		}
+	}
+
+	&__subtitle {
+		@include typography-subtitle-1;
+		color: $color-heading-dark;
+	}
+
+	&__title {
+		@include typography-h3;
+		@include breakpoint-up(md) {
+			@include typography-h2;
+		}
+		@include margin-top(xs);
+		@include margin-bottom(md);
+
+		color: $color-heading-dark;
+	}
+
+	&__image {
+		display: block;
+		bottom: 0px;
+		height: auto;
+		margin: 0px auto;
+		object-fit: cover;
+		position: absolute;
+		right: rem(16px);
+		width: 95%;
+		max-width: rem(500px);
+		z-index: 1;
+
+		@include breakpoint-up(md) {
+		}
+
+		@include breakpoint-up(lg) {
+			max-width: rem(700px);
+		}
 
 		@include breakpoint-up(xl) {
-			left: 400px;
+			left: 40% '';
 		}
 	}
 }
 
-.l-main-section-about {
-	position: relative;
-	overflow: hidden;
-
-	&__bubble-1 {
-		right: px-to-rem(64px);
-		top: px-to-rem(400px);
-
-		@include breakpoint-up(md) {
-			bottom: px-to-rem(0px);
-			right: px-to-rem(100px);
-		}
-
-		@include breakpoint-up(lg) {
-			right: px-to-rem(50px);
-		}
-
-		@include breakpoint-up(xl) {
-			right: px-to-rem(200px);
-		}
+.l-about {
+	&__image {
+		height: auto;
+		width: 100%;
 	}
 
-	&__bubble-2 {
-		right: px-to-rem(64px);
-		top: px-to-rem(300px);
+	&__description {
+		@include margin-top(md);
 
 		@include breakpoint-up(md) {
-			top: auto;
-			bottom: px-to-rem(50px);
-			right: px-to-rem(100px);
+			margin-top: 0px;
 		}
 
-		@include breakpoint-up(lg) {
-			bottom: px-to-rem(120px);
-			right: px-to-rem(40px);
-		}
+		@include typography-body-2;
 
-		@include breakpoint-up(xl) {
-			right: px-to-rem(200px);
-		}
+		color: $color-body-dark;
 	}
 }
 
-.l-main-section-service {
-	position: relative;
-	overflow: hidden;
-
-	&__bubble-1 {
-		right: px-to-rem(-10px);
-		top: px-to-rem(350px);
+.l-contact {
+	&__form {
+		@include margin-top(lg);
 
 		@include breakpoint-up(md) {
-			right: px-to-rem(-50px);
-			top: px-to-rem(250px);
+			margin-top: 0px;
 		}
 	}
 
-	&__bubble-2 {
-		top: px-to-rem(400px);
-		left: px-to-rem(100px);
+	&__label {
+		@include margin-bottom(xs);
+	}
 
-		@include breakpoint-up(md) {
-			top: auto;
-			bottom: px-to-rem(0px);
-		}
+	&__input {
+		@include margin-bottom(xs);
+	}
 
-		@include breakpoint-up(lg) {
-			left: px-to-rem(200px);
-		}
+	&__button {
+		@include margin-top(md);
+	}
 
-		@include breakpoint-up(xl) {
-			left: px-to-rem(500px);
-		}
+	&__image {
+		height: auto;
+		width: 100%;
 	}
 }

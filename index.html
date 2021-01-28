@@ -11,37 +11,77 @@
 
 			<div class="c-bubble c-bubble--xl l-header__bubble-1"></div>
 			
-			<nav class="c-navigation"></nav>
-			<div class="container-fluid l-header-container">
+			<nav class="m-nav-desktop u-bg-grey">
+				<div class="container-fluid u-override-container-fluid ">
+					<div class="m-nav-desktop__content d-flex justify-content-between align-items-center">
+						<p class="m-nav-desktop__logo">Mayank K.</p>
+						<ul class="m-nav-desktop__list d-flex align-items-center">
+							<li class="m-nav-desktop__list-item"><a href="#testimonials" class="m-nav-desktop__anchor">Testimonials</a></li>
+							<li class="m-nav-desktop__list-item"><a href="#about" class="m-nav-desktop__anchor">About</a></li>
+							<li class="m-nav-desktop__list-item"><a href="#services" class="m-nav-desktop__anchor">Services</a></li>
+							<li class="m-nav-desktop__list-item"><a href="#contact" class="m-nav-desktop__anchor">Contact</a></li>
+						
+							<li class="m-nav-desktop__list-item u-margin-right-0">
+								<a href="#" class="c-button m-nav-desktop__anchor">Hire now</a>
+							</li>
+						</ul>
+					</div>
+				</div> 
+			</nav>
+
+			<nav class="m-nav-mobile d-flex justify-content-between align-items-center u-bg-grey">
+				<p class="m-nav-mobile__logo">Mayank K.</p>
+				<button id="j-hamburger" class="m-nav-mobile__hamburger">
+					<div class="m-nav-mobile__hamburger-piece-1"></div>
+					<div class="m-nav-mobile__hamburger-piece-2"></div>
+				</button>
+
+				<nav class="m-nav-mobile__panel m-nav-mobile__panel--hide">
+					<button id="j-nav-cross" class="m-nav-mobile__panel-cross-button" ><span class="m-nav-mobile__panel-cross-icon">.</span></button>
+					<p class="m-nav-mobile__panel-logo">Mayank K.</p>
+					<ul class="m-nav-mobile__panel-list d-flex flex-column">
+						<li class="m-nav-mobile__panel-list-item"><a href="#testimonials" class="m-nav-mobile__anchor">Testimonials</a></li>
+						<li class="m-nav-mobile__panel-list-item"><a href="#about" class="m-nav-mobile__anchor">About</a></li>
+						<li class="m-nav-mobile__panel-list-item"><a href="#services" class="m-nav-mobile__anchor">Services</a></li>
+						<li class="m-nav-mobile__panel-list-item"><a href="#contact" class="m-nav-mobile__anchor">Contact</a></li>
+						<li class="m-nav-mobile__panel-list-item u-margin-bottom-0">
+							<a href="#" class="c-button m-nav-mobile__anchor">Hire now</a>
+						</li>
+					</ul>
+				</nav>
+			</nav>
+
+
+			<div class="container-fluid u-override-container-fluid u-bubble-container">
 				
-				<div class="c-bubble c-bubble--sm l-header-container__bubble-1"></div>
-				<div class="c-bubble c-bubble--md l-header-container__bubble-2"></div>
-				<div class="c-bubble c-bubble--lg l-header-container__bubble-3"></div>
-				<div class="c-bubble c-bubble--xxl l-header-container__bubble-4"></div>
-				<div class="c-bubble c-bubble--xxxl l-header-container__bubble-5"></div>
+				<div class="c-bubble c-bubble--sm l-header__bubble-2"></div>
+				<div class="c-bubble c-bubble--md l-header__bubble-3"></div>
+				<div class="c-bubble c-bubble--lg l-header__bubble-4"></div>
+				<div class="c-bubble c-bubble--xxl l-header__bubble-5"></div>
+				<div class="c-bubble c-bubble--xxxl l-header__bubble-6"></div>
 				
-				<div class="p-hero-section">
-					<div class="p-hero-section__text">
-						<p class="p-hero-section__subtitle">Hello! I am Mayank and I do</p>
-						<h2 class="p-hero-section__title">Web Design and Developement</h2>
+				<div class="l-hero">
+					<div class="l-hero__text">
+						<p class="l-hero__subtitle">Hello! I am Mayank and I do</p>
+						<h2 class="l-hero__title">Web Design and Developement</h2>
 						<button
 							class="c-button c-button--large"
 						>Hire on upwork</button>
 					</div>
-					<img src="assets/images/hero.png" class="p-hero-section__image" />
+					<img src="assets/images/hero.png" class="l-hero__image" />
 				</div>
 			</div>
 		</header>
 		<main class="l-main">
-			<section class="m-main-section m-main-section--bg l-main-section-why">
+			<section class="m-main-section u-bg-grey u-bubble-container">
 
-				<div class="c-bubble c-bubble--md l-main-section-why__bubble-1"></div>
-				<div class="c-bubble c-bubble--md l-main-section-why__bubble-2"></div>
+				<div class="c-bubble c-bubble--md l-main__bubble-1"></div>
+				<div class="c-bubble c-bubble--md l-main__bubble-2"></div>
 
-				<div class="container-fluid l-main__container-why">
+				<div class="container-fluid u-override-container-fluid u-bubble-container">
 
-					<div class="c-bubble c-bubble--lg l-main__container-why-bubble-1"></div>
-					<div class="c-bubble c-bubble--xl l-main__container-why-bubble-3"></div>
+					<div class="c-bubble c-bubble--lg l-main__bubble-3"></div>
+					<div class="c-bubble c-bubble--xl l-main__bubble-4"></div>
 					
 					<div class="m-main-section__title">
 						<h4
@@ -51,8 +91,8 @@
 					</div>
 					<div class="m-main-section__content">
 						<section class="m-why-section">
-							<div class="row">
-								<div class="col-md-6 order-1 order-md-0">
+							<div class="row u-override-row">
+								<div class="col-md-6 u-override-col order-1 order-md-0">
 									<div class="m-why-section__text">
 										<p class="m-why-section__title">Designer + Developer</p>
 										<p
@@ -60,14 +100,14 @@
 										>You are guaranteed to have the approved designs perfectly implemented to the code. There is no hassle of managing a designer and a developer separately, creating unnecessary problems.</p>
 									</div>
 								</div>
-								<div class="col-6 col-md-3 order-0 order-md-1 offset-3">
+								<div class="col-6 col-md-3 u-override-col order-0 order-md-1 offset-3">
 									<img class="m-why-section__image" src="assets/images/design and development.svg" alt="" />
 								</div>
 							</div>
 						</section>
 						<section class="m-why-section">
-							<div class="row">
-								<div class="col-md-6 order-1 order-md-0">
+							<div class="row u-override-row">
+								<div class="col-md-6 u-override-col order-1 order-md-0">
 									<div class="m-why-section__text">
 										<p class="m-why-section__title">Responsive designs</p>
 										<p
@@ -75,14 +115,14 @@
 										>The websites are fully responsive to all the different screen sizes. They look equally good and function the same as their desktop counterpart.</p>
 									</div>
 								</div>
-								<div class="col-6 col-md-3 order-0 order-md-1 offset-3">
+								<div class="col-6 col-md-3  u-override-col order-0 order-md-1 offset-3">
 									<img class="m-why-section__image" src="assets/images/responsive_design.svg" alt="" />
 								</div>
 							</div>
 						</section>
 						<section class="m-why-section">
-							<div class="row">
-								<div class="col-md-6 order-1 order-md-0">
+							<div class="row u-override-row">
+								<div class="col-md-6 u-override-col order-1 order-md-0">
 									<div class="m-why-section__text">
 										<p class="m-why-section__title">Rapid development</p>
 										<p
@@ -90,14 +130,14 @@
 										>The quick and efficient development process to get your product delivered quickly without compromising any quality and unnecessary cost issues.</p>
 									</div>
 								</div>
-								<div class="col-6 col-md-3 order-0 offset-3 order-md-1">
+								<div class="col-6 col-md-3 u-override-col order-0 offset-3 order-md-1">
 									<img class="m-why-section__image" src="assets/images/rapid_development.svg" alt="" />
 								</div>
 							</div>
 						</section>
 						<section class="m-why-section u-margin-bottom-0">
-							<div class="row">
-								<div class="col-md-6 order-1 order-md-0">
+							<div class="row u-override-row">
+								<div class="col-md-6 u-override-col order-1 order-md-0">
 									<div class="m-why-section__text">
 										<p class="m-why-section__title">Design principals</p>
 										<p
@@ -105,7 +145,7 @@
 										>The designs are crafted using the core design principles that are inspired by nature and are pleasant and harmonious to the human eye. </p>
 									</div>
 								</div>
-								<div class="col-6 col-md-3 order-0 offset-3 order-md-1">
+								<div class="col-6 col-md-3 u-override-col order-0 offset-3 order-md-1">
 									<img class="m-why-section__image" src="assets/images/design_principles.svg" alt="" />
 								</div>
 							</div>
@@ -113,12 +153,12 @@
 					</div>
 				</div>
 			</section>
-			<section class="m-main-section">
-				<div class="container-fluid l-main__container-client">
+			<section id="testimonials" class="m-main-section">
+				<div class="container-fluid u-override-container-fluid u-bubble-container">
 
-					<div class="c-bubble c-bubble--md l-main__container-client-bubble-1"></div>
-					<div class="c-bubble c-bubble--xl l-main__container-client-bubble-2"></div>
-					<div class="c-bubble c-bubble--lg l-main__container-client-bubble-3"></div>
+					<div class="c-bubble c-bubble--md l-main__bubble-5"></div>
+					<div class="c-bubble c-bubble--xl l-main__bubble-6"></div>
+					<div class="c-bubble c-bubble--lg l-main__bubble-7"></div>
 					
 					<div class="m-main-section__title">
 						<h
@@ -128,9 +168,9 @@
 						<h class="m-main-section__title-text">say</h>
 					</div>
 					<div class="m-main-section__content">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="m-client-card-container">
+						<div class="row u-override-row">
+							<div class="col-md-4 u-override-col">
+								<div class="m-client-card-wrapper">
 									<div class="c-client-card">
 										<div class="c-client-card__box">
 											<p class="c-client-card__quote">&ldquo;</p>
@@ -149,8 +189,8 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4">
-								<div class="m-client-card-container">
+							<div class="col-md-4 u-override-col">
+								<div class="m-client-card-wrapper">
 									<div class="c-client-card">
 										<div class="c-client-card__box">
 											<p class="c-client-card__quote">&ldquo;</p>
@@ -169,8 +209,8 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4">
-								<div class="m-client-card-container u-margin-bottom-0">
+							<div class="col-md-4 u-override-col">
+								<div class="m-client-card-wrapper u-margin-bottom-0">
 									<div class="c-client-card">
 										<div class="c-client-card__box">
 											<p class="c-client-card__quote">&ldquo;</p>
@@ -193,14 +233,14 @@
 					</div>
 				</div>
 			</section>
-			<section class="m-main-section m-main-section--bg l-main-section-about">
+			<section id="about" class="m-main-section u-bg-grey u-bubble-container">
 
-				<div class="c-bubble c-bubble--lg l-main-section-about__bubble-1"></div>
-				<div class="c-bubble c-bubble--md l-main-section-about__bubble-2"></div>
+				<div class="c-bubble c-bubble--lg l-main__bubble-8"></div>
+				<div class="c-bubble c-bubble--md l-main__bubble-9"></div>
 				
-				<div class="container-fluid l-main__container-about">
+				<div class="container-fluid u-override-container-fluid u-bubble-container">
 
-					<div class="c-bubble c-bubble--xl l-main__container-about-bubble-1"></div>
+					<div class="c-bubble c-bubble--xl l-main__bubble-10"></div>
 					
 					<div class="m-main-section__title">
 						<h
@@ -209,17 +249,17 @@
 						<h class="m-main-section__title-text">me</h>
 					</div>
 					<div class="m-main-section__content">
-						<div class="p-about">
-							<div class="row">
-								<div class="col-md-6 order-1 order-md-0" >
-									<p class="p-about__description">Hi there! I am Mayank Upadhyay, a web designer and a front-end developer by profession, have been freelancing on Upwork for the past two years. I am inspired by the possibilities of the web and feel amazed to see my built websites helping other people.
-										<br /><br/>I am not that good at writing about myself but would say that I have self-taught myself some professional-level skills and constantly trying to get better every day.</p>
+						<div class="l-about">
+							<div class="row u-override-row">
+								<div class="col-md-6 u-override-col order-1 order-md-0" >
+									<p class="l-about__description">Hi there! I am Mayank Kumar, a web designer and a front-end developer by profession, have been freelancing on Upwork for the past two years. I am inspired by the possibilities of the web and feel amazed to see my built websites helping other people.
+									<br /><br/>Although, I am not that good at writing about myself but would surely conform that I have self-taught myself some professional-level skills and constantly look for the ways to get better at them every day. I am interested in all the dimensions of web technology from research, planning, design, frontend-development, backend-development to devops and management. I always prefer to work with my previous clients but working with new clients is equally delightful. <br /> <br /> Always feel free to contact me if you need any help or assistance related to my work and services.</p>
 								</div>
-								<div class="col-6 col-md-3 order-0 order-md-1 offset-3">
+								<div class="col-6 col-md-3 u-override-col order-0 order-md-1 offset-3">
 									<img
 										src="assets/images/about.png"
 										alt=""
-										class="p-about__image"
+										class="l-about__image"
 									/>
 								</div>
 							</div>
@@ -227,23 +267,23 @@
 					</div>
 				</div>
 			</section>
-			<section class="m-main-section l-main-section-service">
+			<section id="services" class="m-main-section u-bubble-container">
 
-				<div class="c-bubble c-bubble--xl l-main-section-service__bubble-1"></div>
-				<div class="c-bubble c-bubble--sm l-main-section-service__bubble-2"></div>
+				<div class="c-bubble c-bubble--xl l-main__bubble-11"></div>
+				<div class="c-bubble c-bubble--sm l-main__bubble-12"></div>
 				
-				<div class="container-fluid l-main__container-service">
+				<div class="container-fluid u-override-container-fluid u-bubble-container">
 
-					<div class="c-bubble c-bubble--lg l-main__container-service-bubble-2"></div>
+					<div class="c-bubble c-bubble--lg l-main__bubble-13"></div>
 					
 					<div class="m-main-section__title">
 						<h class="m-main-section__title-text">My </h>
 						<h class="m-main-section__title-text m-main-section__title-text--primary">Services</h>
 					</div>
 					<div class="m-main-section__content">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="m-service-card-container">
+						<div class="row u-override-row">
+							<div class="col-md-6 u-override-col">
+								<div class="m-service-card-wrapper">
 									<div class="c-service-card">
 										<img
 											src="assets/images/web_design.svg"
@@ -255,8 +295,8 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6">
-								<div class="m-service-card-container u-margin-bottom-0">
+							<div class="col-md-6 u-override-col">
+								<div class="m-service-card-wrapper u-margin-bottom-0">
 									<div class="c-service-card">
 										<img
 											src="assets/images/development.svg"
@@ -272,11 +312,12 @@
 					</div>
 				</div>
 			</section>
-			<section class="m-main-section m-main-section--bg">
-				<div class="container-fluid l-main__container-project">
+			<section class="m-main-section u-bg-grey u-bubble-container">
+				<div class="c-bubble c-bubble--md l-main__bubble-14"></div>
 
-					<div class="c-bubble c-bubble--md l-main__container-project-bubble-1"></div>
-					<div class="c-bubble c-bubble--xl l-main__container-project-bubble-2"></div>
+				<div class="container-fluid u-override-container-fluid u-bubble-container">
+
+					<div class="c-bubble c-bubble--xl l-main__bubble-15"></div>
 
 					<div class="m-main-section__title">
 						<h
@@ -285,9 +326,9 @@
 						<h class="m-main-section__title-text">projects</h>
 					</div>
 					<div class="m-main-section__content">
-						<div class="row">
-							<div class="col-md-6 col-lg-3">
-								<div class="m-project-card-container m-project-card-container--margin-bottom">
+						<div class="row u-override-row">
+							<div class="col-md-6 col-lg-3 u-override-col">
+								<div class="m-project-card-wrapper m-project-card-wrapper--margin-bottom">
 									<figure class="c-project-card">
 										<img
 											src="assets/images/placeholder.jpg"
@@ -300,8 +341,8 @@
 									</figure>
 								</div>
 							</div>
-							<div class="col-md-6 col-lg-3">
-								<div class="m-project-card-container m-project-card-container--margin-bottom">
+							<div class="col-md-6 col-lg-3 u-override-col">
+								<div class="m-project-card-wrapper m-project-card-wrapper--margin-bottom">
 									<figure class="c-project-card">
 										<img
 											src="assets/images/placeholder.jpg"
@@ -314,8 +355,8 @@
 									</figure>
 								</div>
 							</div>
-							<div class="col-md-6 col-lg-3">
-								<div class="m-project-card-container">
+							<div class="col-md-6 col-lg-3 u-override-col">
+								<div class="m-project-card-wrapper">
 									<figure class="c-project-card">
 										<img
 											src="assets/images/placeholder.jpg"
@@ -328,8 +369,8 @@
 									</figure>
 								</div>
 							</div>
-							<div class="col-md-6 col-lg-3">
-								<div class="m-project-card-container u-margin-bottom-0">
+							<div class="col-md-6 col-lg-3 u-override-col">
+								<div class="m-project-card-wrapper u-margin-bottom-0">
 									<figure class="c-project-card">
 										<img
 											src="assets/images/placeholder.jpg"
@@ -347,10 +388,10 @@
 					</div>
 				</div>
 			</section>
-			<section class="m-main-section">
-				<div class="container-fluid l-main__container-contact">
+			<section id="contact" class="m-main-section">
+				<div class="container-fluid u-override-container-fluid u-bubble-container">
 
-					<div class="c-bubble c-bubble--xl l-main__container-contact-bubble-1"></div>
+					<div class="c-bubble c-bubble--xl l-main__bubble-16"></div>
 					
 					<div class="m-main-section__title">
 						<h
@@ -359,21 +400,21 @@
 						<h class="m-main-section__title-text">me</h>
 					</div>
 					<div class="m-main-section__content">
-						<div class="p-contact">
-							<div class="row">
-								<div class="col-md-6 order-1 order-md-0">
-									<form action="" class="p-contact__form">
-										<label for="name" class="c-label p-contact__label">Name</label>
-										<input type="text" name="name" placeholder="name" class="c-input p-contact__input">
-										<label for="email" class="c-label p-contact__label c-label--contact">Email</label>
-										<input type="text" name="email" placeholder="email" class="c-input p-contact__input">
-										<label for="message" class="c-label p-contact__label c-label--contact">Message</label>
-										<textarea class="c-textarea p-contact__textarea" name="message" cols="30" rows="5" placeholder="message"></textarea>
-										<button class="c-button p-contact__button">submit</button>
+						<div class="l-contact">
+							<div class="row u-override-row">
+								<div class="col-md-6 u-override-col order-1 order-md-0">
+									<form action="" class="l-contact__form">
+										<label for="name" class="c-label l-contact__label">Name</label>
+										<input type="text" name="name" placeholder="name" class="c-input l-contact__input">
+										<label for="email" class="c-label l-contact__label c-label--contact">Email</label>
+										<input type="text" name="email" placeholder="email" class="c-input l-contact__input">
+										<label for="message" class="c-label l-contact__label c-label--contact">Message</label>
+										<textarea class="c-textarea l-contact__textarea" name="message" cols="30" rows="5" placeholder="message"></textarea>
+										<button id="j-contact-submit" class="c-button l-contact__button">submit</button>
 									</form>
 								</div>
-								<div class="col-6 col-md-4 order-0 order-md-1 offset-3 offset-md-2">
-									<img src="assets/images/contact.svg" class="p-contact__image"></img>
+								<div class="col-6 col-md-4 u-override-col order-0 order-md-1 offset-3 offset-md-2">
+									<img src="assets/images/contact.svg" class="l-contact__image"></img>
 								</div>
 							</div>
 						</div>
@@ -381,17 +422,20 @@
 				</div>
 			</section>
 		</main>
-		<footer class="l-footer">
-			<div class="container-fluid l-footer__container">
+		<footer class="l-footer u-bg-grey">
+			<div class="container-fluid u-override-container-fluid u-bubble-container">
 
-				<div class="c-bubble l-footer__container-bubble-1"></div>
-				<div class="c-bubble c-bubble--sm l-footer__container-bubble-2"></div>
-				<div class="c-bubble c-bubble--md l-footer__container-bubble-3"></div>
+				<div class="c-bubble l-footer__bubble-1"></div>
+				<div class="c-bubble c-bubble--sm l-footer__bubble-2"></div>
+				<div class="c-bubble c-bubble--md l-footer__bubble-3"></div>
 				
-				<div class="p-footer">
-					<p class="p-footer__text"><span class="p-footer__symbol">&#169;</span>2021, all rights researved</p>
+				<div class="l-footer__content">
+					<p class="l-footer__text"><span class="l-footer__symbol">&#169;</span>2021, all rights researved</p>
 				</div>
 			</div>
+
+			<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+			<script src="assets/js/main.js"></script>
 		</footer>
 	</body>
 </html>

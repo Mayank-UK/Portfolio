@@ -1,3 +1,36 @@
+.u-override-container {
+	padding: 0px;
+}
+
+.u-override-container-fluid {
+	padding: 0px;
+	max-width: 1200px;
+}
+
+.u-override-row {
+	padding: 0px;
+	margin: 0px;
+}
+
+.u-override-col {
+	padding-left: rem(16px);
+	padding-right: rem(16px);
+}
+
 .u-margin-bottom-0 {
 	margin-bottom: 0px;
+}
+
+.u-margin-right-0 {
+	margin-right: 0px;
+}
+
+.u-bg-grey {
+	background: $background-body-dark;
+}
+
+.u-bubble-container {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
 }

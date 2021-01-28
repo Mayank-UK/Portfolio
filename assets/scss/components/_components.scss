@@ -1,14 +1,9 @@
-.c-navigation {
-	background: $background-body-dark;
-	height: 50px;
-}
-
 .c-client-card {
 	&__box {
 		@include padding-inset(sm);
-		background: $color-primary;
+		@include border-primary;
 
-		border-radius: 2px;
+		background: $color-primary;
 	}
 
 	&__quote {
@@ -16,8 +11,8 @@
 
 		color: $color-heading-light;
 
-		height: px-to-rem(32px);
-		width: px-to-rem(32px);
+		height: rem(32px);
+		width: rem(32px);
 	}
 
 	&__blockquote {
@@ -30,8 +25,8 @@
 
 	&__image {
 		@include margin-top(sm);
-		height: px-to-rem(64px);
-		width: px-to-rem(64px);
+		height: rem(64px);
+		width: rem(64px);
 	}
 
 	&__title {
@@ -51,16 +46,16 @@
 
 .c-service-card {
 	@include padding-inset(sm);
+	@include border-primary;
 
 	background: $color-primary;
-	border-radius: 2px;
 
 	&__image {
 		display: block;
 		height: auto;
 		margin: auto;
 		width: 50%;
-		max-width: px-to-rem(128px);
+		max-width: rem(128px);
 
 		@include breakpoint-up(md) {
 			margin: 0px;
@@ -69,7 +64,6 @@
 
 	&__title {
 		@include margin-top(sm);
-
 		@include typography-subtitle-1;
 
 		color: $color-heading-light;
@@ -105,34 +99,54 @@
 .c-input {
 	@include padding-inset-squish(xs);
 	@include typography-body-2;
+	@include border-dark;
 
 	background: $background-input-field;
-	border-radius: 2px;
-	border: 1px solid $color-border-dark;
 	color: $color-body-dark;
 	display: block;
+	transition: all 0.5s ease;
 	width: 100%;
+
+	&:focus {
+		outline: $outline-primary;
+	}
 }
 
 .c-textarea {
 	@include padding-inset-squish(xs);
 	@include typography-body-2;
+	@include border-dark;
 
 	background: $background-input-field;
-	border-radius: 2px;
-	border: 1px solid $color-border-dark;
 	color: $color-body-dark;
 	width: 100%;
+
+	&:focus {
+		outline: $outline-primary;
+	}
 }
 
 .c-button {
 	@include typography-button;
 	@include padding-inset(xs);
+	@include border-primary;
 
 	background: none;
-	border: 2px solid $color-primary;
-	border-radius: 2px;
 	color: $color-primary;
+	transition: all 0.3s ease;
+
+	&:hover {
+		background: $color-primary;
+		color: $color-heading-light;
+		cursor: pointer;
+	}
+
+	&:focus {
+		background: $color-primary-dark;
+		color: $color-heading-light;
+
+		outline: $outline-primary;
+	}
 
 	&--large {
 		@include padding-inset-squish(sm);
@@ -140,46 +154,45 @@
 }
 
 .c-bubble {
-	background: $background-body-gradient;
+	background: $color-primary-gradient;
 	border-radius: 50%;
-	height: px-to-rem(8px);
+	height: rem(8px);
 	overflow: hidden;
 	position: absolute;
-	width: px-to-rem(8px);
-	z-index: -1c1;
+	width: rem(8px);
 
 	&--sm {
-		width: px-to-rem(16px);
-		height: px-to-rem(16px);
+		width: rem(16px);
+		height: rem(16px);
 	}
 
 	&--md {
-		width: px-to-rem(32px);
-		height: px-to-rem(32px);
+		width: rem(32px);
+		height: rem(32px);
 		opacity: 0.9;
 	}
 
 	&--lg {
-		width: px-to-rem(64px);
-		height: px-to-rem(64px);
+		width: rem(64px);
+		height: rem(64px);
 		opacity: 0.7;
 	}
 
 	&--xl {
-		width: px-to-rem(128px);
-		height: px-to-rem(128px);
+		width: rem(128px);
+		height: rem(128px);
 		opacity: 0.6;
 	}
 
 	&--xxl {
-		width: px-to-rem(256px);
-		height: px-to-rem(256px);
+		width: rem(256px);
+		height: rem(256px);
 		opacity: 0.5;
 	}
 
 	&--xxxl {
-		height: px-to-rem(512px);
-		width: px-to-rem(512px);
+		height: rem(512px);
+		width: rem(512px);
 		opacity: 0.5;
 	}
 }
