@@ -9,12 +9,6 @@ $roboto_slab: Roboto Slab, serif;
 	font-size: rem(96px);
 	letter-spacing: rem(-1.5px);
 	line-height: 100%;
-
-	/* @include breakpoint-up('md') {
-		font-size: rem(96px);
-		letter-spacing: rem(-1.5px);
-		line-height: 144;
-	} */
 }
 
 @mixin typography-h2 {
@@ -23,12 +17,6 @@ $roboto_slab: Roboto Slab, serif;
 	font-size: rem(60px);
 	letter-spacing: rem(-0.5px);
 	line-height: 100%;
-
-	/* @include breakpoint-up('md') {
-		font-size: rem(60px);
-		letter-spacing: rem(-0.5px);
-		line-height: 88;
-	} */
 }
 
 @mixin typography-h3 {
@@ -37,12 +25,6 @@ $roboto_slab: Roboto Slab, serif;
 	font-size: rem(48px);
 	letter-spacing: rem(0px);
 	line-height: 100%;
-
-	/* @include breakpoint-up('md') {
-		font-size: rem(48px);
-		letter-spacing: rem(0px);
-		line-height: 72;
-	} */
 }
 
 @mixin typography-h4 {
@@ -51,12 +33,6 @@ $roboto_slab: Roboto Slab, serif;
 	font-size: rem(34px);
 	letter-spacing: rem(0.25px);
 	line-height: 130%;
-
-	/* @include breakpoint-up('md') {
-		font-size: rem(34px);
-		letter-spacing: rem(0.25px);
-		line-height: 52;
-	} */
 }
 
 @mixin typography-h5 {
@@ -65,12 +41,6 @@ $roboto_slab: Roboto Slab, serif;
 	font-size: rem(24px);
 	letter-spacing: rem(0px);
 	line-height: 130%;
-
-	/* @include breakpoint-up('md') {
-		font-size: rem(24px);
-		letter-spacing: rem(0px);
-		line-height: 36;
-	} */
 }
 
 @mixin typography-h6 {
@@ -79,12 +49,6 @@ $roboto_slab: Roboto Slab, serif;
 	font-size: rem(20px);
 	letter-spacing: rem(0.15px);
 	line-height: 130%;
-
-	/* @include breakpoint-up('md') {
-		font-size: rem(20px);
-		letter-spacing: rem(0.15px);
-		line-height: 32;
-	} */
 }
 
 @mixin typography-subtitle-1 {
@@ -93,12 +57,6 @@ $roboto_slab: Roboto Slab, serif;
 	font-size: rem(16px);
 	letter-spacing: rem(0.15px);
 	line-height: 150%;
-
-	/* @include breakpoint-up('md') {
-		font-size: rem(16px);
-		letter-spacing: rem(0.15px);
-		line-height: 28;
-	} */
 }
 
 @mixin typography-subtitle-2 {
@@ -107,12 +65,6 @@ $roboto_slab: Roboto Slab, serif;
 	font-size: rem(14px);
 	letter-spacing: rem(0.1px);
 	line-height: 150%;
-
-	/* @include breakpoint-up('md') {
-		font-size: rem(14px);
-		letter-spacing: rem(0.1px);
-		line-height: 24;
-	} */
 }
 
 @mixin typography-body-1 {
@@ -121,12 +73,6 @@ $roboto_slab: Roboto Slab, serif;
 	font-size: rem(16px);
 	letter-spacing: rem(0.5px);
 	line-height: 170%;
-
-	/* @include breakpoint-up('md') {
-		font-size: rem(16px);
-		letter-spacing: rem(0.5px);
-		line-height: 28;
-	} */
 }
 
 @mixin typography-body-2 {
@@ -135,12 +81,6 @@ $roboto_slab: Roboto Slab, serif;
 	font-size: rem(14px);
 	letter-spacing: rem(0.25px);
 	line-height: 170%;
-
-	/* @include breakpoint-up('md') {
-		font-size: rem(14px);
-		letter-spacing: rem(0.25px);
-		line-height: 24;
-	} */
 }
 
 @mixin typography-button {
@@ -150,12 +90,6 @@ $roboto_slab: Roboto Slab, serif;
 	letter-spacing: rem(1.25px);
 	line-height: 100%;
 	text-transform: uppercase;
-
-	/* @include breakpoint-up('md') {
-		font-size: rem(16px);
-		letter-spacing: rem(1.25px);
-		line-height: 28;
-	} */
 }
 
 @mixin typography-caption {
@@ -164,12 +98,6 @@ $roboto_slab: Roboto Slab, serif;
 	font-size: rem(14px);
 	letter-spacing: rem(0.4px);
 	line-height: 170%;
-
-	/* @include breakpoint-up('md') {
-		font-size: rem(14px);
-		letter-spacing: rem(0.4px);
-		line-height: 24;
-	} */
 }
 
 @mixin typography-overline {
@@ -178,12 +106,6 @@ $roboto_slab: Roboto Slab, serif;
 	font-size: rem(12px);
 	letter-spacing: rem(1.5px);
 	line-height: 170%;
-
-	/* @include breakpoint-up('md') {
-		font-size: rem(12px);
-		letter-spacing: rem(1.5px);
-		line-height: 20;
-	} */
 }
 
 @mixin typography-navigation {
@@ -192,10 +114,4 @@ $roboto_slab: Roboto Slab, serif;
 	font-size: rem(14px);
 	letter-spacing: rem(1.5px);
 	line-height: 170%;
-
-	/* @include breakpoint-up('md') {
-		font-size: rem(12px);
-		letter-spacing: rem(1.5px);
-		line-height: 20;
-	} */
 }

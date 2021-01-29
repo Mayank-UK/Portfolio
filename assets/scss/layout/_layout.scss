@@ -21,8 +21,6 @@
 	}
 
 	&__bubble-2 {
-		background: $color-secondary-light !important;
-		// top: rem(100px);
 		top: 13%;
 		left: rem(250px);
 
@@ -66,6 +64,7 @@
 	&__bubble-5 {
 		bottom: rem(128px);
 		right: rem(-8px);
+		z-index: -1;
 
 		@include breakpoint-up(md) {
 			bottom: rem(200px);

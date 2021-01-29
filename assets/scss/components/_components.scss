@@ -70,7 +70,7 @@
 	}
 
 	&__description {
-		@include typography-body-1;
+		@include typography-body-2;
 
 		color: $color-body-light;
 	}
@@ -154,7 +154,7 @@
 }
 
 .c-bubble {
-	background: $color-primary-gradient;
+	background: $background-body-gradient;
 	border-radius: 50%;
 	height: rem(8px);
 	overflow: hidden;

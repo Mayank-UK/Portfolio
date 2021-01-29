@@ -3,7 +3,6 @@
 
 /* base */
 @import './base/_reset';
-@import './base/_bootstrap_grid';
 @import './base/_breakpoints';
 @import './base/_colors';
 @import './base/_typography';
@@ -31,6 +30,7 @@
 @import './utility/_utility_classes';
 
 /* code */
-* {
-	// border: 1px dotted black !important;
+/* * {
+	border: 1px dotted black !important;
 }
+ */
