@@ -3,21 +3,20 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./assets/css/bootstrap_grid.css">
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="./assets/css/main.min.css" />
 		<title>Portfolio</title>
 	</head>
 	<body>
-		<header class="l-header d-flex flex-column">
+		<header class="l-header">
 
 			<div class="c-bubble c-bubble--xl l-header__bubble-1"></div>
 			
 			<nav class="m-nav-desktop u-bg-grey">
-				<div class="container-fluid u-override-container-fluid ">
-					<div class="m-nav-desktop__content d-flex justify-content-between align-items-center">
+				<div class="m-nav-desktop__container">
+					<div class="m-nav-desktop__content">
 						<p class="m-nav-desktop__logo">Mayank K.</p>
-						<ul class="m-nav-desktop__list d-flex align-items-center">
+						<ul class="m-nav-desktop__list">
 							<li class="m-nav-desktop__list-item"><a href="#j-testimonials" class="m-nav-desktop__anchor">Testimonials</a></li>
 							<li class="m-nav-desktop__list-item"><a href="#j-about" class="m-nav-desktop__anchor">About</a></li>
 							<li class="m-nav-desktop__list-item"><a href="#j-services" class="m-nav-desktop__anchor">Services</a></li>
@@ -30,7 +29,7 @@
 				</div> 
 			</nav>
 
-			<nav class="m-nav-mobile d-flex justify-content-between align-items-center u-bg-grey">
+			<nav class="m-nav-mobile u-bg-grey">
 				<p class="m-nav-mobile__logo">Mayank K.</p>
 				<button id="j-hamburger" class="m-nav-mobile__hamburger">
 					<div class="m-nav-mobile__hamburger-piece-1"></div>
@@ -40,7 +39,7 @@
 				<nav class="m-nav-mobile__panel m-nav-mobile__panel--hide">
 					<button id="j-nav-cross" class="m-nav-mobile__panel-cross-button" ><i class="m-nav-mobile__panel-cross-icon"></i></button>
 					<p class="m-nav-mobile__panel-logo">Mayank K.</p>
-					<ul class="m-nav-mobile__panel-list d-flex flex-column">
+					<ul class="m-nav-mobile__panel-list">
 						<li class="m-nav-mobile__panel-list-item"><a href="#j-testimonials" class="m-nav-mobile__anchor">Testimonials</a></li>
 						<li class="m-nav-mobile__panel-list-item"><a href="#j-about" class="m-nav-mobile__anchor">About</a></li>
 						<li class="m-nav-mobile__panel-list-item"><a href="#j-services" class="m-nav-mobile__anchor">Services</a></li>
@@ -52,9 +51,7 @@
 				</nav>
 			</nav>
 
-
-			<div class="container-fluid u-override-container-fluid u-bubble-container">
-				
+			<div class="l-header__container  u-bubble-container">				
 				<div class="c-bubble c-bubble--sm l-header__bubble-2"></div>
 				<div class="c-bubble c-bubble--md l-header__bubble-3"></div>
 				<div class="c-bubble c-bubble--lg l-header__bubble-4"></div>
@@ -79,7 +76,7 @@
 				<div class="c-bubble c-bubble--md l-main__bubble-1"></div>
 				<div class="c-bubble c-bubble--md l-main__bubble-2"></div>
 
-				<div class="container-fluid u-override-container-fluid u-bubble-container">
+				<div class="m-main-section__container u-bubble-container">
 
 					<div class="c-bubble c-bubble--lg l-main__bubble-3"></div>
 					<div class="c-bubble c-bubble--xl l-main__bubble-4"></div>
@@ -92,8 +89,8 @@
 					</div>
 					<div class="m-main-section__content">
 						<section class="m-why-section">
-							<div class="row u-override-row">
-								<div class="col-md-6 u-override-col order-1 order-md-0">
+							<div class="m-main-section__row">
+								<div class="m-main-section__col-why-content">
 									<div class="m-why-section__text" data-aos="fade-up" data-aos-delay="100">
 										<p class="m-why-section__title">Designer + Developer</p>
 										<p
@@ -101,14 +98,14 @@
 										>You are guaranteed to have the approved designs perfectly implemented to the code. There is no hassle of managing a designer and a developer separately, creating unnecessary problems.</p>
 									</div>
 								</div>
-								<div class="col-6 col-md-3 u-override-col order-0 order-md-1 offset-3">
+								<div class="m-main-section__col-why-image">
 									<img class="m-why-section__image" src="./assets/images/home/illustrations/design and development.svg" alt="" data-aos="fade-up" data-aos-delay="200" />
 								</div>
 							</div>
 						</section>
 						<section class="m-why-section">
-							<div class="row u-override-row">
-								<div class="col-md-6 u-override-col order-1 order-md-0">
+							<div class="m-main-section__row">
+								<div class="m-main-section__col-why-content">
 									<div class="m-why-section__text" data-aos="fade-up" data-aos-delay="100">
 										<p class="m-why-section__title">Responsive designs</p>
 										<p
@@ -116,14 +113,14 @@
 										>The websites are fully responsive to all the different screen sizes. They look equally good and function the same as their desktop counterpart.</p>
 									</div>
 								</div>
-								<div class="col-6 col-md-3  u-override-col order-0 order-md-1 offset-3">
+								<div class="m-main-section__col-why-image">
 									<img class="m-why-section__image" src="./assets/images/home/illustrations/responsive_design.svg" alt="" data-aos="fade-up" data-aos-delay="200" />
 								</div>
 							</div>
 						</section>
 						<section class="m-why-section">
-							<div class="row u-override-row">
-								<div class="col-md-6 u-override-col order-1 order-md-0">
+							<div class="m-main-section__row">
+								<div class="m-main-section__col-why-content">
 									<div class="m-why-section__text" data-aos="fade-up" data-aos-delay="100">
 										<p class="m-why-section__title">Rapid development</p>
 										<p
@@ -131,14 +128,14 @@
 										>The quick and efficient development process to get your product delivered quickly without compromising any quality and unnecessary cost issues.</p>
 									</div>
 								</div>
-								<div class="col-6 col-md-3 u-override-col order-0 offset-3 order-md-1">
+								<div class="m-main-section__col-why-image">
 									<img class="m-why-section__image" src="./assets/images/home/illustrations/rapid_development.svg" alt="" data-aos="fade-up" data-aos-delay="200" />
 								</div>
 							</div>
 						</section>
 						<section class="m-why-section u-margin-bottom-0">
-							<div class="row u-override-row">
-								<div class="col-md-6 u-override-col order-1 order-md-0">
+							<div class="m-main-section__row">
+								<div class="m-main-section__col-why-content">
 									<div class="m-why-section__text" data-aos="fade-up" data-aos-delay="100">
 										<p class="m-why-section__title">Design principals</p>
 										<p
@@ -146,7 +143,7 @@
 										>The designs are crafted using the core design principles that are inspired by nature and are pleasant and harmonious to the human eye. </p>
 									</div>
 								</div>
-								<div class="col-6 col-md-3 u-override-col order-0 offset-3 order-md-1">
+								<div class="m-main-section__col-why-image">
 									<img class="m-why-section__image" src="./assets/images/home/illustrations/design_principles.svg" alt="" data-aos="fade-up" data-aos-delay="200" />
 								</div>
 							</div>
@@ -155,7 +152,7 @@
 				</div>
 			</section>
 			<section id="j-testimonials" class="m-main-section">
-				<div class="container-fluid u-override-container-fluid u-bubble-container">
+				<div class="m-main-section__container u-bubble-container">
 
 					<div class="c-bubble c-bubble--md l-main__bubble-5"></div>
 					<div class="c-bubble c-bubble--xl l-main__bubble-6"></div>
@@ -169,8 +166,8 @@
 						<h class="m-main-section__title-text">say</h>
 					</div>
 					<div class="m-main-section__content">
-						<div class="row u-override-row">
-							<div class="col-md-4 u-override-col">
+						<div class="m-main-section__row">
+							<div class="m-main-section__col-client">
 								<div class="m-client-card-wrapper" data-aos="fade-up" data-aos-delay="100">
 									<div class="c-client-card">
 										<div class="c-client-card__box">
@@ -190,7 +187,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4 u-override-col">
+							<div class="m-main-section__col-client">
 								<div class="m-client-card-wrapper" data-aos="fade-up" data-aos-delay="200">
 									<div class="c-client-card">
 										<div class="c-client-card__box">
@@ -210,7 +207,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4 u-override-col">
+							<div class="m-main-section__col-client">
 								<div class="m-client-card-wrapper u-margin-bottom-0" data-aos="fade-up" data-aos-delay="300">
 									<div class="c-client-card">
 										<div class="c-client-card__box">
@@ -239,7 +236,7 @@
 				<div class="c-bubble c-bubble--lg l-main__bubble-8"></div>
 				<div class="c-bubble c-bubble--md l-main__bubble-9"></div>
 				
-				<div class="container-fluid u-override-container-fluid u-bubble-container">
+				<div class="m-main-section__container u-bubble-container">
 
 					<div class="c-bubble c-bubble--xl l-main__bubble-10"></div>
 					
@@ -251,12 +248,12 @@
 					</div>
 					<div class="m-main-section__content">
 						<div class="l-about">
-							<div class="row u-override-row">
-								<div class="col-md-6 u-override-col order-1 order-md-0" >
+							<div class="m-main-section__row">
+								<div class="m-main-section__col-about-content" >
 									<p class="l-about__description" data-aos="fade-up" data-aos-delay="100">Hi there! I am Mayank Kumar, a web designer and a front-end developer by profession, have been freelancing on Upwork for the past two years. I am inspired by the possibilities of the web and feel amazed to see my built websites helping other people.
 									<br /><br/>Although, I am not that good at writing about myself but would surely conform that I have self-taught myself some professional-level skills and constantly look for the ways to get better at them every day. I am interested in all the dimensions of web technology from research, planning, design, frontend-development, backend-development to devops and management. I always prefer to work with my previous clients but working with new clients is equally delightful. <br /> <br /> Always feel free to contact me if you need any help or assistance related to my work and services.</p>
 								</div>
-								<div class="col-6 col-md-3 u-override-col order-0 order-md-1 offset-3" >
+								<div class="m-main-section__col-about-image" >
 									<img
 										src="./assets/images/home/about.png"
 										alt=""
@@ -274,7 +271,7 @@
 				<div class="c-bubble c-bubble--xl l-main__bubble-11"></div>
 				<div class="c-bubble c-bubble--sm l-main__bubble-12"></div>
 				
-				<div class="container-fluid u-override-container-fluid u-bubble-container">
+				<div class="m-main-section__container u-bubble-container">
 
 					<div class="c-bubble c-bubble--lg l-main__bubble-13"></div>
 					
@@ -283,8 +280,8 @@
 						<h class="m-main-section__title-text m-main-section__title-text--primary">Services</h>
 					</div>
 					<div class="m-main-section__content">
-						<div class="row u-override-row">
-							<div class="col-md-6 u-override-col">
+						<div class="m-main-section__row">
+							<div class="m-main-section__col-service">
 								<div class="m-service-card-wrapper" data-aos="fade-up" data-aos-delay="100">
 									<div class="c-service-card">
 										<img
@@ -293,11 +290,11 @@
 											class="c-service-card__image"
 										/>
 										<p class="c-service-card__title">Web design</p>
-										<p class="c-service-card__description">Designs that speak for themselves, unique to brand identity, and build using advanced modern tools like Figma.</p>
+										<p class="c-service-card__description">Designs that speak for themselves, unique to brand identity, and build using advance modern tools like Figma.</p>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6 u-override-col">
+							<div class="m-main-section__col-service">
 								<div class="m-service-card-wrapper u-margin-bottom-0" data-aos="fade-up" data-aos-delay="200">
 									<div class="c-service-card">
 										<img
@@ -306,7 +303,7 @@
 											class="c-service-card__image"
 										/>
 										<p class="c-service-card__title">Front-end development</p>
-										<p class="c-service-card__description">Designs that speak for themselves, unique to brand identity, and build using advanced modern tools like Figma.</p>
+										<p class="c-service-card__description">The code is developed with best practices, making it fast, efficient and reliable for future maintenance.</p>
 									</div>
 								</div>
 							</div>
@@ -317,7 +314,7 @@
 			<section class="m-main-section u-bg-grey u-bubble-container">
 				<div class="c-bubble c-bubble--md l-main__bubble-14"></div>
 
-				<div class="container-fluid u-override-container-fluid u-bubble-container">
+				<div class="m-main-section__container u-bubble-container">
 
 					<div class="c-bubble c-bubble--xl l-main__bubble-15"></div>
 
@@ -328,8 +325,8 @@
 						<h class="m-main-section__title-text">projects</h>
 					</div>
 					<div class="m-main-section__content">
-						<div class="row u-override-row">
-							<div class="col-md-6 col-lg-3 u-override-col">
+						<div class="m-main-section__row">
+							<div class="m-main-section__col-project">
 								<div class="m-project-card-wrapper m-project-card-wrapper--margin-bottom" data-aos="fade-up" data-aos-delay="100">
 									<figure class="c-project-card">
 										<img
@@ -343,7 +340,7 @@
 									</figure>
 								</div>
 							</div>
-							<div class="col-md-6 col-lg-3 u-override-col">
+							<div class="m-main-section__col-project">
 								<div class="m-project-card-wrapper m-project-card-wrapper--margin-bottom" data-aos="fade-up" data-aos-delay="200">
 									<figure class="c-project-card">
 										<img
@@ -357,7 +354,7 @@
 									</figure>
 								</div>
 							</div>
-							<div class="col-md-6 col-lg-3 u-override-col">
+							<div class="m-main-section__col-project">
 								<div class="m-project-card-wrapper" data-aos="fade-up" data-aos-delay="300">
 									<figure class="c-project-card">
 										<img
@@ -371,7 +368,7 @@
 									</figure>
 								</div>
 							</div>
-							<div class="col-md-6 col-lg-3 u-override-col">
+							<div class="m-main-section__col-project">
 								<div class="m-project-card-wrapper u-margin-bottom-0" data-aos="fade-up" data-aos-delay="400">
 									<figure class="c-project-card">
 										<img
@@ -391,7 +388,7 @@
 				</div>
 			</section>
 			<section id="j-contact" class="m-main-section">
-				<div class="container-fluid u-override-container-fluid u-bubble-container">
+				<div class="m-main-section__container u-bubble-container">
 
 					<div class="c-bubble c-bubble--xl l-main__bubble-16"></div>
 					
@@ -403,8 +400,8 @@
 					</div>
 					<div class="m-main-section__content">
 						<div class="l-contact">
-							<div class="row u-override-row">
-								<div class="col-md-6 u-override-col order-1 order-md-0">
+							<div class="m-main-section__row">
+								<div class="m-main-section__col-contact-content">
 									<form action="" class="l-contact__form" data-aos="fade-up" data-aos-delay="100">
 										<label for="name" class="c-label l-contact__label">Name</label>
 										<input type="text" name="name" placeholder="name" class="c-input l-contact__input">
@@ -415,7 +412,7 @@
 										<button id="j-contact-submit" class="c-button l-contact__button">submit</button>
 									</form>
 								</div>
-								<div class="col-6 col-md-4 u-override-col order-0 order-md-1 offset-3 offset-md-2">
+								<div class="m-main-section__col-contact-image">
 									<img src="./assets/images/home/illustrations/contact.svg" class="l-contact__image" data-aos="fade-up" data-aos-delay="200"></img>
 								</div>
 							</div>
@@ -425,7 +422,7 @@
 			</section>
 		</main>
 		<footer class="l-footer u-bg-grey">
-			<div class="container-fluid u-override-container-fluid u-bubble-container">
+			<div class="l-footer__container u-bubble-container">
 
 				<div class="c-bubble l-footer__bubble-1"></div>
 				<div class="c-bubble c-bubble--sm l-footer__bubble-2"></div>

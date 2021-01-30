@@ -1,5 +1,11 @@
 .l-header {
 	height: 100vh;
+	@extend .d-flex;
+	@extend .flex-column;
+
+	&__container {
+		@extend .container-fluid;
+	}
 
 	&__bubble-1 {
 		display: none;
@@ -278,6 +284,10 @@
 }
 
 .l-footer {
+	&__container {
+		@extend .container-fluid;
+	}
+
 	&__bubble-1 {
 		right: rem(100px);
 		bottom: rem(50px);

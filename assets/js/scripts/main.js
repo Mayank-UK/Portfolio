@@ -21,10 +21,12 @@ $(window).on('load', function () {
 		var hamburgerIcon = $('#j-hamburger');
 		var navCrossIcon = $('.m-nav-mobile__panel-cross-icon');
 		var navPanel = $('.m-nav-mobile__panel');
+		var navLinks = $('.m-nav-mobile__panel-list-item');
 
 		// bind events
 		hamburgerIcon.click(_toggleNavPanelVisibility);
 		navCrossIcon.click(_toggleNavPanelVisibility);
+		navLinks.click(_toggleNavPanelVisibility);
 
 		function _toggleNavPanelVisibility() {
 			navPanel.toggleClass(togglableClass);

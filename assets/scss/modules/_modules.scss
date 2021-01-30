@@ -5,7 +5,15 @@
 	width: 100%;
 	z-index: 2;
 
+	&__container {
+		@extend .container-fluid;
+	}
+
 	&__content {
+		@extend .d-flex;
+		@extend .justify-content-between;
+		@extend .align-items-center;
+
 		@include padding-inset(sm);
 	}
 
@@ -16,6 +24,8 @@
 	}
 
 	&__list {
+		@extend .d-flex;
+		@extend .align-items-center;
 	}
 
 	&__list-item {
@@ -38,10 +48,15 @@
 
 	@include breakpoint-up(md) {
 		display: block;
+		left: 0px;
 	}
 }
 
 .m-nav-mobile {
+	@extend .d-flex;
+	@extend .justify-content-between;
+	@extend .align-items-center;
+
 	@include padding-inset(sm);
 	position: fixed;
 	top: 0px;
@@ -126,6 +141,9 @@
 	}
 
 	&__panel-list {
+		@extend d-flex;
+		@extend flex-column;
+
 		margin-left: 20%;
 	}
 
@@ -156,6 +174,70 @@
 	@include padding-bottom(lg);
 	//to prevent outline due to smooth scrolling
 	outline: none;
+
+	&__container {
+		@extend .container-fluid;
+	}
+
+	&__row {
+		@extend .row;
+	}
+
+	&__col-why-content {
+		@extend .col-md-6;
+		@extend .order-1;
+		@extend .order-md-0;
+	}
+
+	&__col-why-image {
+		@extend .col-6;
+		@extend .col-md-3;
+		@extend .order-0;
+		@extend .order-md-1;
+		@extend .offset-3;
+	}
+
+	&__col-client {
+		@extend .col-md-4;
+	}
+
+	&__col-about-content {
+		@extend .col-md-6;
+		@extend .order-1;
+		@extend .order-md-0;
+	}
+
+	&__col-about-image {
+		@extend .col-6;
+		@extend .col-md-3;
+		@extend .order-0;
+		@extend .order-md-1;
+		@extend .offset-3;
+	}
+
+	&__col-service {
+		@extend .col-md-6;
+	}
+
+	&__col-project {
+		@extend .col-md-6;
+		@extend .col-lg-3;
+	}
+
+	&__col-contact-content {
+		@extend .col-md-6;
+		@extend .order-1;
+		@extend .order-md-0;
+	}
+
+	&__col-contact-image {
+		@extend .col-6;
+		@extend .col-md-4;
+		@extend .order-0;
+		@extend .order-md-1;
+		@extend .offset-3;
+		@extend .offset-md-2;
+	}
 
 	&__title {
 		@include margin-left(sm);
