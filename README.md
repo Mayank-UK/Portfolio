@@ -1,69 +1,97 @@
-# Documentation for the design system
+# Documentation
 
-## Index
+-   ## Index
 
--   Introduction
--   Technology stack used
--   Quick set up
--   Directory structure
--   Design system technical analysis
+    -   Introduction
+    -   Getting started
+        -   Technology used
+        -   Tools used
+    -   Application architecture
+        -   Directory structure
+        -   Logical architecture
+    -   Development
+    -   Production
+    -   Deployment
+    -   Contributing
+    -   Versioning
+    -   Authors
+    -   License
+    -   Acknowledgement
 
-## Introduction
+-   ## Introduction
 
-This documentation tries to make the reader familier how the project is architectured and all the technical details associated with the project.
+    -   This is a portfolio project.
 
-This project is a design system implementation.
+-   ## Getting started
 
-## Technologies involved
+    -   ### Technologies used
 
--   HTML5
--   CSS3
--   SASS
--   Javascript
+        -   HTML5
+        -   CSS3
+        -   SASS
+        -   Javascript
+        -   Jquery
+            -   Plugins
+        -   Bootstrap
 
-## Quick set up
+    -   ### Tools used
 
-### Requirements
+        -   VScode
+            -   Live sass plugin
+        -   Chrome
 
--   SASS compiler
-    -   Preferred way is the live sass compiler extension for vscode, no setup required, and settings also included in .vscode directory
+-   ## Application architecture
 
-### Start working
+    -   ### Directory structure
 
-Project can be started with a local host setup or without local host setup using the index file.
+            /.git
+            /.vscode
+            /assets
+                /css
+                /fonts
+                /images
+                /js
+                /scss
+            /views
+            index.html
+            readme.md
 
-SASS compiler setup to compile only index.scss and output to index.min.css
+    -   ### Logical architecture
 
-## Directory structure
+        -   #### HTML
 
--   .vscode (live sass compile)
--   assets
-    -   css
-    -   js
-    -   scss
-        -   base
-        -   design_system
-        -   utility
-    -   images
--   components
--   pages
--   index.html
+            -   All the html pages are included in the /views directory
+            -   The common layout elements like header, footer are included in the /common directory
 
-## Design system
+        -   #### CSS/SCSS
 
--   The design system follows the combination of soft 8pt and 4pt grid system for UI and typography design and 12 column
-    grid system for layout
--   Exception to 8pt grid
-    -   Layout and elements dependent on layout do not follow 8pt grid
-    -   Single line text elements width is variable
-    -   Alignment do not follow 8pt grid
--   Consistent spacing using techniques like inset, stack, inline, etc
-    -   Some rules for stack
-        -   Leave first element without any margin
-        -   Then add margin to second, then leave third, then add to forth and so on
-        -   Remove the bottom margin from the last element
-        -   Some elements like Image with caption, input with label are considered as a single unit
-    -   Some rules for inline
-        -   Leave first element without any margin
-        -   Then add margin to second, then leave third, then add to forth and so on
-        -   Remove the bottom margin from the last element
+            -   CSS is written using SASS preprocessor and gets compiled to /css/main.min.css
+            -   The SASS architecture is based on the "OOCSS" using "SMACSS" architecture with "BEM" naming convention
+            -   If you think you don't have enough time or skills to utilize the above mentioned architecture, don't worry, you are covered, just name your classes like this "df-your-class-name" and write all your css or scss in the \_dirtyfix.scss file
+
+        -   #### Javascript
+
+            -   The javascript is written in modular fashion utilizing revealing and pubsub design pattern
+
+        -   Other documentation related files are include in the documentation related directory
+
+-   ## Development
+
+    -   Start the development on this project with a simple local host setup.
+    -   SASS is compiled using vscode live sass plugin, the settings are included in the project directory, if you want to use new strategy to compile sass please don't forget to mention it in this documentation.
+
+-   ## Production
+    -   No additional steps for production
+-   ## Deployment
+    -   Just put the project files into the root of the web server
+-   ## Contributing
+    -   This is an individually developed project
+-   ## Versioning
+    -   There is no versioning for this project
+-   ## Authors
+    -   Mayank Kumar
+        -   Contact me at mayankupadhyay191298@gmail.com
+-   ## License
+    -   MIT licence
+-   ## Acknowledgement
+    -   This project acknowledges the effort of all the developers who develops, maintains and make their work free to use for other small developers like me, without their intellectual thoughts, plugins, libraries and tools this project would have not been possible.
