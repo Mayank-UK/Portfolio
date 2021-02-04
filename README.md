@@ -1,6 +1,6 @@
 # Documentation
 
--   ## Index
+-   ## Table of contents
 
     -   Introduction
     -   Getting started
